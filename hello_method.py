@@ -14,3 +14,4 @@ def print_string(my_string=""):
 if __name__ == '__main__':
     print_string("Hello!")
     print_string()
+    print()
