@@ -1,5 +1,9 @@
 def known_persons(raw_known_person=[]):
+    ##not optimized
     return raw_known_person.split(",")
+    ##optimized
+    return [return_list.strip() for return_list in raw_known_person.split(",")]
+
 
 def search_person(search_person_input, known_persons_list):
     if search_person_input in known_persons_list:
